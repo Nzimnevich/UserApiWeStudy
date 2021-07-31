@@ -30,7 +30,7 @@ public class UserApi {
     @Test
     @Label("Получить список курсов, GET")
     public void withToken() {
-        given().header("X-Auth-Token", "c7069fd6a948ed584beb2c48801a5ed6").
+        given().header("X-Auth-Token", "N").
                 get("organization/courses")
                 .then().statusCode(200);
 
