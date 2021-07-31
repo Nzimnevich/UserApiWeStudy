@@ -39,7 +39,7 @@ public class UserApi {
     @Test
     @Label("Получить список курсов, GET")
     public void checkFirstCourse() {
-        given().header("X-Auth-Token", "N") //токен нельзя публиковать в публичных репазиториях
+        given().header("X-Auth-Token", "N") //токен нельзя публиковать в публичных репозиториях
                 .get("organization/courses")
                 .then()
                 .body("data.id[0]", is(55905))
